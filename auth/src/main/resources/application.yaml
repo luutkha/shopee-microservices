@@ -1,0 +1,15 @@
+spring:
+  servlet:
+    multipart:
+      max-request-size: 10MB
+      max-file-size: 10MB
+  sql:
+    init:
+      mode: never
+      separator: ^;
+
+security:
+  jwt:
+    expiration: 3600
+    refresh-expiration: 3600
+    secret: asdfghjkl
